@@ -11,14 +11,14 @@ body {
   
   h1 {
     text-align: center;
-    color: #CACACA;
+    color: #cacaca;
   }
   
   .container-hamburger {
     min-height: 100%;
     overflow: hidden;
   }
- 
+  
   .hamburger {
     position: absolute;
     box-sizing: border-box;
@@ -30,14 +30,11 @@ body {
     border-radius: 0 4px 4px 0;
     transition: 0.5s ease left;
     z-index: 2;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
   }
   
   .hamburger:hover span {
-    background-color: #FFF;
+    background-color: #fff;
   }
   
   .hamburger-active .hamburger {
@@ -58,7 +55,7 @@ body {
   
   .hamburger span {
     display: block;
-    background-color: #000000;
+    background-color: #000;
     width: 100%;
     border-radius: 2px;
     height: 4px;
@@ -68,7 +65,7 @@ body {
   
   .hamburger-menu {
     box-sizing: border-box;
-    color: #000000;
+    color: #000;
     height: 100%;
     position: absolute;
     left: -300px;
@@ -91,7 +88,7 @@ body {
   
   .hamburger-menu .main-links li a {
     display: block;
-    color: #CACACA;
+    color: #000;
     text-decoration: none;
     font-size: 14px;
     text-transform: uppercase;
@@ -101,14 +98,13 @@ body {
     font-weight: bold;
     opacity: 0;
     transition: 0.5s ease all;
-    transition-delay: inherit;
     transform: translateY(20px);
     position: relative;
     z-index: 2;
   }
   
   .hamburger-menu .main-links li a:after {
-    background-color: #FFF;
+    background-color: #000;
     width: 100%;
     overflow: hidden;
     position: absolute;
@@ -129,7 +125,7 @@ body {
   }
   
   .hamburger-menu .main-links li a:hover {
-    color: #FFF;
+    color: #000;
   }
   
   .hamburger-active .main-links li a {
@@ -139,7 +135,7 @@ body {
   
   .hamburger-menu .secondary-links {
     text-align: center;
-    color: #CACACA;
+    color: #000;
     font-size: 12px;
     padding: 10px 0;
     transition: all 0.5s ease;
@@ -157,13 +153,13 @@ body {
   .hamburger-menu .secondary-links p {
     display: inline-block;
     padding: 10px 3px;
-    color: #CACACA;
+    color: #000;
     margin: 2px;
     transition: all 0.5s ease;
   }
   
   .hamburger-menu .secondary-links a:hover {
-    color: #FFF;
+    color: #fff;
   }
   
   .delay01 {
@@ -191,7 +187,7 @@ body {
   }
   
   .delay07 {
-    transition-delay: 0.7s
+    transition-delay: 0.7s;
   }
   
   .delay08 {
@@ -205,3 +201,44 @@ body {
   .delay1 {
     transition-delay: 1s;
   }
+  .has-search .form-control-feedback {
+  right: initial;
+  left: 20px;
+  color: #ccc;
+}
+
+.has-search .form-control {
+  bottom: 20px;
+  padding-right: 70px;
+  padding-left: 45px;
+  font-size: 20px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.05);
+
+}
+
+.container-hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.hamburger-wrapper {
+  margin-right: 20px;
+}
+
+.main-links {
+  padding-left: 0;
+}
+
+.main-links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+nav {
+    border-bottom: 1px solid #ccc;
+  }
+  

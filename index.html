@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
-<body><div class="container container-hamburger">
-    <div class="hamburger-wrapper">
-      <div class="hamburger">
-        <span class="hamurger-first"></span>
-        <span class="hamurger-second"></span>
-        <span class="hamurger-third"></span>
+<body>
+  <header>
+    <div class="container container-hamburger">
+      <div class="hamburger-wrapper">
+        <div class="hamburger">
+          <span class="hamurger-first"></span>
+          <span class="hamurger-second"></span>
+          <span class="hamurger-third"></span>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-menu">
+                <ul class="main-links">
+                  <li class="delay02"><a href="#"><i class="fas fa-sticky-note"></i> Notes</a></li>
+                  <li class="delay03"><a href="#"><i class="fas fa-bell"></i> Reminder</a></li>
+                  <li class="delay04"><a href="#"><i class="fas fa-archive"></i> Archive</a></li>
+                  <li class="delay05"><a href="#"><i class="fas fa-trash"></i> Trash</a></li>
+                </ul>
+              </div>              
+        </div>
       </div>
-      <div class="hamburger-menu">
-        <ul class="main-links">
-          <li class="delay02"><a href="#">Home</a></li>
-          <li class="delay03"><a href="#">About</a></li>
-          <li class="delay04"><a href="#">Contact</a></li>
-        </ul>
-  </div>
-</nav>
-<script src="./script.js"></script>
+      <div class="main">
+        <!-- Actual search box -->
+        <div class="form-group has-feedback has-search">
+          <span class="fas fa-search form-control-feedback"></span>
+          <input type="text" class="form-control" placeholder="Search tasks">
+        </div>
+      </div>
+    </div>
+  </header>
+  <script src="./script.js"></script>
 </body>
 </html>
